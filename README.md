@@ -1,6 +1,6 @@
 # simple E-Commerce Website
 
-# GitHub accoun Link -- https://github.com/saraGosaye/My-SBA--Projectss
+# GitHub accoun Link -- https://github.com/saraGosaye/My-SBA--Projects
 
 ## Project Description
 
