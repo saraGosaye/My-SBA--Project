@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara Ethiopian Market</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #2c3e50;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding: 10px;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      textarea {
+        resize: vertical;
+        height: 150px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #2980b9;
+      }
+
+      .contact-info {
+        margin-top: 20px;
+      }
+
+      .contact-info h2 {
+        font-size: 1.5rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      .contact-info p {
+        margin: 5px 0;
+      }
+
+      .contact-info a {
+        color: #3498db;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      #inquiry {
+        padding: 10px 15px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Sara Ethiopian Styles</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            pattern="[A-Za-z\s]+"
+            title="Please enter a valid name (letters and spaces only)"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Please enter a valid email address"
+            required
+          />
+
+          <label for="inquiry">Type of Inquiry:</label>
+          <select id="inquiry" name="inquiry" required>
+            <option value="" disabled selected>Select your inquiry type</option>
+            <option value="general">General Inquiry</option>
+            <option value="product-info">Product Information</option>
+            <option value="order-status">Order Status</option>
+            <option value="returns">Returns and Exchanges</option>
+          </select>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h2>Our Contact Information</h2>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@saraethiopianstyles.com"
+              >info@saraethiopianstyles.com</a
+            >
+          </p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <p><strong>Address:</strong> 1234 abcd St, MN, USA</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Sara Ethiopian Styles</p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

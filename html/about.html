@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara Ethiopian Market</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2 {
+        color: #2c3e50;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .section {
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .section h2 {
+        margin-top: 0;
+      }
+
+      .section p {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .button:hover {
+        background-color: #2980b9;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sara Ethiopian Styles</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="section">
+          <h3>Welcome to Sara Ethiopian Styles!</h3>
+          <p>
+            Founded by Sara Woldegiorgis, we offer a curated collection of
+            authentic Ethiopian traditional clothing. Our mission is to bring
+            you elegant, high-quality garments that celebrate Ethiopia’s rich
+            heritage.
+          </p>
+        </div>
+        <div class="section">
+          <h3>Why Choose Us?</h3>
+          <p>
+            <strong>Authentic Designs:</strong> Genuine Ethiopian craftsmanship.
+          </p>
+          <p><strong>High Quality:</strong> Durable and beautifully made.</p>
+          <p>
+            <strong>Exceptional Service:</strong> Personalized assistance for a
+            great shopping experience.
+          </p>
+        </div>
+
+        <div class="section">
+          <h3>Our Popular Products</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gondar Traditional Dress</td>
+                <td>
+                  A beautifully crafted traditional dress from the Gondar
+                  region.
+                </td>
+                <td>$50.00</td>
+              </tr>
+              <tr>
+                <td>Handwoven Scarf</td>
+                <td>Authentic Ethiopian scarf, handwoven by local artisans.</td>
+                <td>$25.00</td>
+              </tr>
+              <tr>
+                <td>Leather Sandals</td>
+                <td>Comfortable and stylish leather sandals.</td>
+                <td>$35.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="section">
+          <p>
+            Discover the beauty of Ethiopian culture with our handcrafted
+            products. Each piece in our collection showcases the vibrant
+            traditions of Ethiopia. We value your feedback and look forward to
+            improving your experience with us.
+          </p>
+        </div>
+
+        <section class="feedback-form section">
+          <h3>We'd Love to Hear Your Feedback</h3>
+          <form>
+            <label for="name-feedback">Name:</label>
+            <input
+              type="text"
+              id="name-feedback"
+              name="name"
+              pattern="[A-Za-z\s]+"
+              title="Please enter a valid name (letters and spaces only)"
+              required
+            />
+
+            <label for="email-feedback">Email:</label>
+            <input
+              type="email"
+              id="email-feedback"
+              name="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Please enter a valid email address"
+              required
+            />
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sara Ethiopian Styles</p>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
